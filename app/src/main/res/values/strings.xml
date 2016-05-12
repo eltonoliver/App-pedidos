@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Consumidor</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_activity_mapa_cidades">MapaCidadesActivity</string>
+    <string name="title_activity_teste_gesture">TesteGesture</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="title_activity_facebook">FaceBookActivity</string>
+
+    <string-array name="Seleciona_cidade">
+        <item>BOA VISTA</item>
+    </string-array>
+    <string-array name="Seleciona_bairro">
+        <item>Distrito Industrial</item>
+        <item>Centro</item>
+        <item>Cidade Nova</item>
+        <item>Adrianópolis</item>
+    </string-array>
+
+    <string name="title_activity_lista_simples">ListaSimplesActivity</string>
+    <string name="title_activity_revenda">RevendaActivity</string>
+    <string name="title_activity_revenda_detalhes">RevendaDetalhesActivity</string>
+    <string name="title_activity_produto">ProdutoActivity</string>
+    <string name="title_activity_pedido">PedidoActivity</string>
+    <string name="title_activity_historico_pedido">HistoricoPedidoActivity</string>
+    <string name="title_activity_historico_pedido_item">HistoricoPedidoItemActivity</string>
+    <string name="title_activity_dialog_pfj">DialogPFJActivity</string>
+    <string name="title_activity_dialog_pfpj">DialogPFPJActivity</string>
+    <string name="title_activity_tela_inicio">TelaInicioActivity</string>
+    <string name="title_activity_mapa">MapaActivity</string>
+    <string name="title_activity_date_dialog">DateDialogActivity</string>
+    <string name="title_activity_pedido_granel">PedidoGranelActivity</string>
+    <string name="title_activity_dialogs_list">DialogsListActivity</string>
+    <string name="title_activity_historico_pedidopj">HistoricoPedidoPJActivity</string>
+    
+</resources>

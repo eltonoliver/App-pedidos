@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@drawable/fundo"  android:orientation="vertical" android:layout_gravity="center_vertical|center_horizontal" android:padding="5dp" android:gravity="center_vertical|center_horizontal">
+     
+<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FF8C00" android:orientation="vertical" android:padding="5dp" >
+<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FFFFFF" android:orientation="vertical" android:padding="5dp" >
+     
+    
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#FF8C00" android:padding="5dp">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+             style="@style/TituloCaixaTexto" android:text="AGENDAMENTO DE ABASTECIMENTO" android:textSize="15sp" android:textColor="@android:color/white" />
+	</LinearLayout>
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"   android:paddingTop="20dp" android:paddingBottom="20dp">
+        <TextView  android:layout_height="wrap_content" android:layout_width="wrap_content"
+             style="@style/TituloCaixaTexto" android:text="Selecione a data para abastecimento" android:textSize="12sp" />
+
+        <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"   android:paddingTop="5dp">
+        
+        	<TextView android:id="@+id/tvPedidoGranelData" android:layout_height="wrap_content" android:layout_width="wrap_content"
+            	 style="@style/TituloCaixaTexto" android:text="08/05/2014" android:textSize="20sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical"/>
+        	<ImageView android:id="@+id/ivPedidoGranelConsultaData" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/agendarxml" android:paddingLeft="10dp"/>
+    	</LinearLayout>
+    	  	<TextView android:id="@+id/tvPedidoGranelDiaSemana" android:layout_height="wrap_content" android:layout_width="wrap_content"
+           	 style="@style/TituloCaixaTexto" android:text="Segunda" android:textSize="20sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical"/>
+        
+    </LinearLayout>
+	    
+    	<!-- Linha -->
+	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp" android:layout_marginTop="20dp"/>
+    	
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" 
+	    android:paddingTop="10dp">
+	    <ImageView android:id="@+id/btPedidoGranelCancelar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/cancelarxml" android:layout_weight="2" />
+        <ImageView android:id="@+id/btPedidoGranelConfirmar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/confirmarxml" android:layout_weight="2" />
+	</LinearLayout>
+</LinearLayout>	   
+</LinearLayout>	
+</LinearLayout>

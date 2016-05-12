@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="5dp">
+     
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"  android:orientation="vertical" android:layout_weight="3">
+
+		<!-- Titulo -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+        	android:background="#FF8C00" android:padding="3dp" android:gravity="center_horizontal">
+        	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            	android:textColor="#FFFFFF" android:textSize="15dp" android:textStyle="bold" android:text="HISTÓRICO"/>
+   		</LinearLayout>
+	    
+	   <!-- Pesquisa Dados -->
+	   <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="5dp">
+	    	
+	    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"  android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Filtrar por"/>
+				<Spinner android:id="@+id/spHistoricoTipo" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+	    	</LinearLayout>
+	       
+	       
+	       <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" 
+	    	    android:layout_weight="4" android:paddingLeft="5dp" android:gravity="top">
+	    	    <ImageView android:id="@+id/ivHistoricoAtualizar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/atualizarxml" android:layout_weight="1"/>
+<!-- 	    	     <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:padding="2dp" android:layout_weight="2"/> -->
+	    	</LinearLayout>
+	       	    	
+	    </LinearLayout>
+	    <!-- Linha -->
+		<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:layout_marginTop="2dp"/>
+	</LinearLayout>	 
+	
+	<LinearLayout android:layout_width="fill_parent"  android:layout_height="fill_parent"  android:background="@android:color/transparent"  
+	       android:orientation="vertical" android:layout_marginTop="5dp" android:layout_weight="2">
+
+		    <ListView
+		        android:id="@+id/lvHistoricoPedido"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" >
+			</ListView>
+		    
+	</LinearLayout>	    
+	
+			<!-- Linha -->
+		<LinearLayout
+		    android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:layout_marginTop="10dp"/>
+	<!-- Botão -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+		    android:layout_weight="3" android:paddingTop="10dp">
+		    <ImageView android:id="@+id/btHistoricoPedidoVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltarxml" android:layout_gravity="center"/>
+		</LinearLayout>		
+		    
+</LinearLayout>

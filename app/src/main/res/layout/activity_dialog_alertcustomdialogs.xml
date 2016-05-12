@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+     android:background="#FF8C00" android:orientation="vertical" android:layout_gravity="center_vertical|center_horizontal" android:padding="5dp">
+     
+<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FFFFFF" android:orientation="vertical" android:padding="5dp">
+     
+    
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#FF8C00" android:padding="5dp">
+        <TextView android:id="@+id/tvAlertDialogsTitulo" android:layout_height="wrap_content" android:layout_width="wrap_content"
+             style="@style/TituloCaixaTexto" android:text="ATENÇÃO" android:textSize="15sp" android:textColor="@android:color/white" />
+	</LinearLayout>
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"   android:paddingTop="20dp">
+        <TextView android:id="@+id/tvAlertDialogsMensagem" android:layout_height="wrap_content" android:layout_width="wrap_content"
+             style="@style/TituloCaixaTexto" android:text="Mensagem teste de confirmação" android:textSize="15sp" />
+	</LinearLayout>
+	    
+    	<!-- Linha -->
+	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp" android:layout_marginTop="10dp"/>
+    	
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" 
+	    android:paddingTop="10dp">
+	    <ImageView android:id="@+id/btAlertDialogsConfirmar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/confirmarxml" android:layout_weight="2" />
+	</LinearLayout>
+	   
+</LinearLayout>	
+</LinearLayout>

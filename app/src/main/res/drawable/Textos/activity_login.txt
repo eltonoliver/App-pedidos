@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="20dp">
+     
+     
+<!--     CNPJ/CPF -->
+<!-- 	<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:paddingTop="5dp" android:layout_weight="6"> -->
+<!-- 		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal"  -->
+<!-- 		    android:orientation="vertical" android:layout_weight="1"> -->
+<!-- 		    <ImageView android:id="@+id/ivLoginCnpj"  -->
+<!-- 		        android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/btopcoes"/> -->
+<!-- 		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/CorTitulo" -->
+<!-- 		        android:text="CNPJ"/> -->
+<!-- 	    </LinearLayout> -->
+<!-- 		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal"   -->
+<!-- 		    android:orientation="vertical" android:layout_weight="1"> -->
+<!-- 			<ImageView android:id="@+id/ivLoginCpf"  -->
+<!-- 	        	android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/btopcoes1"/> -->
+<!-- 		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/CorTitulo" -->
+<!-- 		        android:text="CPF"/> -->
+<!-- 	    </LinearLayout> -->
+<!-- 	</LinearLayout> -->
+	
+	<!-- Linha -->
+<!-- 	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp"/> -->
+
+	<!-- Usuário e Senha -->
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" 
+	    android:paddingTop="10dp" android:layout_weight="5" >
+	    
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		    android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:id="@+id/tvTituloLoginCnpjcpf" android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" 
+		        android:text="CNPJ/CPF"/>
+		    <EditText android:id="@+id/etLoginCnpjcpf" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:inputType="number"/>
+	    </LinearLayout>
+	    
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		    android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto"
+		        android:text="TELEFONE"/>
+		    <EditText android:id="@+id/etLoginSenha" android:layout_height="wrap_content" android:layout_width="fill_parent" android:maxLines="1" android:inputType="number"/>
+	    </LinearLayout>
+			    	    
+	</LinearLayout>
+
+	<!-- Linha -->
+	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp" />
+		
+	
+	<!-- Botoes -->
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal"
+	    android:paddingTop="10dp" android:layout_weight="4" >
+		<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4" />
+	    <ImageView android:id="@+id/btLoginVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltar" android:layout_weight="1"/>
+	    <ImageView android:id="@+id/btLoginEntrar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/entrar" android:layout_weight="1"/>
+	</LinearLayout>		
+	
+</LinearLayout>

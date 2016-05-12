@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="5dp">
+
+	<!-- Titulo -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" 
+        android:background="#FF8C00" android:padding="5dp" android:gravity="center_horizontal">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:textColor="#FFFFFF" android:textSize="20dp" android:textStyle="bold" android:text="PEDIDO DE GÁS"/>
+   </LinearLayout>
+
+ <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1">
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"> 
+    
+    
+    <!-- Produtos Linha 1 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="5dp" android:gravity="bottom">
+    	<!-- P7 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivPedidoP7" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p7"/>
+    	    <TextView android:id="@+id/tvPedidoP7" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:text="R$ 20,00"/>
+    	    <TextView android:id="@+id/tvPedidoQtdP7" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="(0)"/>
+    	    </LinearLayout>
+       
+    	<!-- P13 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivPedidoP13" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p13"/>
+    	    <TextView android:id="@+id/tvPedidoP13" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:text="R$ 45,00"/>
+    	    <TextView android:id="@+id/tvPedidoQtdP13" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="(0)"/>
+    	</LinearLayout>
+    </LinearLayout>
+
+<!--     Produtos Linha 2 -->
+<!--     <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="2dp" android:gravity="bottom"> -->
+       
+<!--     </LinearLayout> -->
+    
+    <!-- Produtos Linha 3 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="1dp" android:gravity="bottom">
+    	<!-- P20 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivPedidoP20"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p20"/>
+    	    <TextView android:id="@+id/tvPedidoP20" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black"  android:text="R$ 70,00"/>
+    	    <TextView android:id="@+id/tvPedidoQtdP20" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="(0)"/>
+    	 </LinearLayout>
+        	<!-- P45 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivPedidoP45" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p45"/>
+    	    <TextView android:id="@+id/tvPedidoP45" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black"  android:text="R$ 170,00"/>
+    	    <TextView android:id="@+id/tvPedidoQtdP45" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="(0)"/>
+    	</LinearLayout>
+        
+        <!-- P20 -->
+    	<LinearLayout android:id="@+id/llPedidoGranel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivPedidoGranel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p1"/>
+    	    <TextView android:id="@+id/tvPedidoGranel" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="Agendamento"/>
+       </LinearLayout>
+    </LinearLayout>
+    
+    <!-- Linha -->
+	<!-- 	<LinearLayout  android:layout_width="fill_parent" android:layout_height="2dp" android:background="#FF8C00" android:layout_marginTop="10dp"/> -->
+	<!-- Titulo -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" 
+        android:background="#FF8C00" android:padding="2dp"  android:layout_marginTop="3dp" android:gravity="right">
+        <TextView android:id="@+id/tvPedidoTotal" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:textColor="#FFFFFF" android:textSize="15dp" android:textStyle="bold" android:text="	TOTAL: R$ 500,00"/>
+   </LinearLayout>
+   	
+	<!-- Produtos Linha 2 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp" android:gravity="bottom">
+     		<ImageView android:id="@+id/ivPedidoVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltarxml" android:layout_weight="1"/>  
+        	<ImageView android:id="@+id/ivPedidoSalvar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/salvarxml" android:layout_weight="1"/>  
+    </LinearLayout>
+	
+    </LinearLayout>
+    </ScrollView>
+    		    
+</LinearLayout>

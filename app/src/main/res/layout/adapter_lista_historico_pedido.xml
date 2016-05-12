@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="@color/list_bg" android:orientation="vertical"  android:gravity="center" android:padding="0dp">
+    
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" android:padding="2dp">
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:paddingRight="2dp">
+	    
+		<!-- Linha 01 -->
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1">
+	        
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Pedido"/>
+				<TextView android:id="@+id/tvHistoricoNoPedido" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="16"  android:textColor="@android:color/black"/>
+	    	</LinearLayout>
+	    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Data" android:paddingLeft="0dp"/>
+				<TextView android:id="@+id/tvHistoricoData" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="04/04/2014"  android:textColor="@android:color/black" android:paddingLeft="0dp" />
+	    	</LinearLayout>
+	    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Hora" android:paddingLeft="0dp"/>
+				<TextView android:id="@+id/tvHistoricoHora" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="09:00"  android:textColor="@android:color/black" android:paddingLeft="0dp"/>
+	    	</LinearLayout>
+	    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto13" android:text="Situação" android:paddingLeft="0dp"/>
+				<TextView android:id="@+id/tvHistoricoStatus" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto13"  android:text="Aguardando"  android:textColor="@android:color/black" android:paddingLeft="0dp"/>
+	    	</LinearLayout>
+    	    	    	    
+    	</LinearLayout>
+
+		<!-- Linha 02 -->
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" android:layout_marginTop="2dp">
+	        
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Revenda"/>
+				<TextView android:id="@+id/tvHistoricoRevenda" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="AMAZONGAS"  android:textColor="@android:color/black" />
+	    	</LinearLayout>
+	    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="3">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Telefone" android:paddingLeft="0dp"/>
+				<TextView android:id="@+id/tvHistoricoTelefone" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="92-2127-2000"  android:textColor="@android:color/black" />
+	    	</LinearLayout>
+	    	
+    	    	    
+    	    	    
+    	</LinearLayout>
+    	
+ </LinearLayout>   
+     	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="10" android:layout_gravity="right" android:paddingLeft="5dp" android:background="@drawable/mais"/>
+<!--     	 	   <ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/mais" android:layout_gravity="right"/> -->
+<!-- 	    	</LinearLayout> -->
+	
+	
+		    
+	    	    
+ </LinearLayout>   	    
+    
+</LinearLayout>

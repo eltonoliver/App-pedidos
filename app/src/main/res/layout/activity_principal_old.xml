@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical">
+
+    
+<ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" > 
+    
+<!-- Menu 01 -->
+
+<LinearLayout android:id="@+id/llMenu1"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"    android:orientation="vertical" >
+    
+	<!--1a parte -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal" android:layout_weight="2" android:paddingTop="10dp" android:paddingLeft="10dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/ivPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="right"
+                android:src="@drawable/pedidoxml" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+	<!--2a parte -->
+    <LinearLayout
+        android:layout_width="fill_parent"    
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal" android:layout_weight="1">
+        
+	        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="2" >
+	            <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="2" android:gravity="center_vertical|right">
+	                   	<ImageView android:id="@+id/ivHistorico" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:src="@drawable/historicoxml"/>
+	            </LinearLayout>
+	            
+	        	<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent"  android:layout_weight="2"/>
+	        	
+	            <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="2" android:gravity="center_vertical|right">
+	                   	<ImageView android:id="@+id/ivRevenda" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:src="@drawable/revendedorxml"/>
+	            </LinearLayout>
+	        		            
+	        </LinearLayout>
+
+	        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="3" android:gravity="center_vertical|right">
+	            <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right">
+	     			<ImageView android:id="@+id/ivMenu1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/outro1"/>
+					<WebView android:id="@+id/wvAnimacao" android:layout_height="wrap_content" android:layout_width="100dp" android:layout_gravity="center_vertical|right" android:paddingRight="5dp"/>
+				</FrameLayout>	
+	     	</LinearLayout>
+
+
+	        	        	        	     	
+
+	</LinearLayout>   
+
+    
+<!--3a parte -->
+     <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" 
+         android:orientation="horizontal" android:gravity="bottom" android:layout_weight="2" android:layout_gravity="bottom" android:paddingBottom="10dp">
+	    
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="left" android:layout_weight="5" android:paddingLeft="10dp">
+	        	<ImageView android:id="@+id/ivSair" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/sairxml"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="right">
+	        	<ImageView android:id="@+id/ivContato" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/contatoxml"/>
+	    </LinearLayout>
+	       
+	</LinearLayout>    
+ </LinearLayout>
+ 
+
+<!-- Menu 02 -->
+
+<LinearLayout android:id="@+id/llMenu2"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"    android:orientation="vertical" >
+
+<!--1a parte -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal" android:layout_weight="2" android:paddingTop="10dp" android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left" >
+
+            <ImageView
+                android:id="@+id/ivCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cadastroxml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+    </LinearLayout>
+      
+    
+    
+<!--2a parte -->
+    <LinearLayout
+        android:layout_width="fill_parent"    
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal" android:layout_weight="1">
+        
+	        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_vertical|left" android:layout_weight="3">
+	            <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right">
+	            	<ImageView android:id="@+id/ivMenu2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/outro"/>
+	            	<WebView android:id="@+id/wvAnimacao2" android:layout_height="wrap_content" android:layout_width="100dp" android:layout_gravity="center_vertical|left" android:paddingLeft="5dp"/>
+	     		</FrameLayout>	     		
+	     	</LinearLayout>
+	     	
+	        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="2" >
+	            <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="2" android:gravity="center_vertical">
+	                   	<ImageView android:id="@+id/ivProduto" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:src="@drawable/produtoxml"/>
+	            </LinearLayout>
+	            
+	        	<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent"  android:layout_weight="2"/>
+	        	
+	            <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="2" android:gravity="center_vertical">
+                   	<ImageView android:id="@+id/ivFacebook" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:src="@drawable/facebookxml"/>
+	            </LinearLayout>
+	        		            
+	        </LinearLayout>
+	        	     	
+	        	    
+	</LinearLayout>   
+
+    
+<!--3a parte -->
+     <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" 
+         android:orientation="horizontal" android:gravity="bottom" android:layout_weight="2" android:layout_gravity="bottom" android:paddingBottom="10dp">
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1">
+	        	<ImageView android:id="@+id/ivLogar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/loginxml"/>
+	    </LinearLayout>   
+	    
+	    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="right" android:layout_weight="5" android:paddingRight="10dp">
+	        	<ImageView android:id="@+id/ivSair2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/sairxml"/>
+	    </LinearLayout>   
+	    	    	   
+	</LinearLayout>
+	</LinearLayout>
+	
+
+
+
+
+   
+   
+</ViewFlipper>
+
+</LinearLayout>

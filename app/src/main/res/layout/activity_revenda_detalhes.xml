@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="5dp">
+     
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"  android:orientation="vertical" android:layout_weight="1">
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Bairro"/>
+			<TextView android:id="@+id/tvRevendaDetalhesBairro" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto"  android:text="DISTRITO INDUSTRIAL"  android:textColor="@android:color/black" />
+	    </LinearLayout>
+	    
+   		<!-- Linha -->
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="5dp"
+		    android:background="#FF8C00" android:layout_marginTop="10dp"/>
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@android:color/transparent"
+		    android:orientation="horizontal" android:layout_marginTop="5dp">
+
+		    <ListView android:id="@+id/lvRevendaDetalhesLista" android:layout_height="fill_parent" android:layout_width="fill_parent" ></ListView>
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	
+	<!-- Linha -->
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="5dp"
+		    android:background="#FF8C00" android:layout_marginTop="10dp"/>
+	<!-- Botão -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+		    android:layout_weight="5" android:paddingTop="10dp">
+		    <ImageView android:id="@+id/btRevendaDetalheVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltarxml" android:layout_gravity="center"/>
+		</LinearLayout>		
+		
+	
+		    
+</LinearLayout>

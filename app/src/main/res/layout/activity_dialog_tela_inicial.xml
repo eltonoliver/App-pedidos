@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTelaInicial"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    android:orientation="vertical" android:layout_gravity="center_vertical|center_horizontal" android:padding="2dp">
+     
+<!-- <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal"> -->
+ <!--     <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"/> --> 
+<!--     <ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/touch2" android:layout_weight="1"/> -->
+    
+<!-- </LinearLayout> -->
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/touch8" android:layout_weight="1"
+        style="@style/AThemeDialogCustom"/>
+    
+</LinearLayout>

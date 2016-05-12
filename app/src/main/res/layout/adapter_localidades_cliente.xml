@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="@color/list_bg" android:orientation="vertical"  android:gravity="center" android:padding="2dp">
+    
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:layout_weight="1">
+    		
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+    
+		<!-- Linha 01 -->
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1">
+	        
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Nome Localidade" />
+				<TextView android:id="@+id/tvLocalidadesClienteNome" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12" 
+				     android:text="AS GAS"  android:textColor="@android:color/black"/>
+	    	</LinearLayout>
+    	    	    
+    	</LinearLayout>
+
+		<!-- Linha 02 -->
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" android:paddingTop="2dp">
+	        
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Endereço" />
+				<TextView android:id="@+id/tvLocalidadesClienteEndereco" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12" 
+				     android:text="Rua dshdsajkdhsajkdhsajkdhasjkd"  android:textColor="@android:color/black"/>
+	    	</LinearLayout>
+    	    	    
+    	</LinearLayout>
+    	
+	    <!-- Linha 03, -->
+	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" android:paddingTop="2dp">
+	        
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Bairro"/>
+				<TextView android:id="@+id/tvLocalidadesClienteBairro" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="Rua dhjdhsjkdhsjkdhsdjk"  android:textColor="@android:color/black" android:paddingLeft="5dp"/>
+	    	</LinearLayout>
+	    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="2">
+				<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto12" android:text="Telefone"/>
+				<TextView android:id="@+id/tvLocalidadesClienteTelefone" android:layout_width="wrap_content"  android:layout_height="wrap_content" style="@style/TextoCaixaTexto12"  android:text="56,59"  android:textColor="@android:color/black" />
+	    	</LinearLayout>
+    	</LinearLayout>
+    	</LinearLayout>
+    	
+    	    <LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="7">
+				<ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/mais"/>
+			</LinearLayout>
+	    	    
+	    
+    	</LinearLayout>
+	    
+</LinearLayout>

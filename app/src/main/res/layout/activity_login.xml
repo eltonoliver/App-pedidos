@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="10dp" android:gravity="center_vertical|center_horizontal">
+     
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_vertical|center_horizontal">
+    
+	<!-- Usuário e Senha -->
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+	    
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		    android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:id="@+id/tvTituloLoginCnpjcpf" android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" 
+		        android:text="CNPJ/CPF"/>
+		    <EditText android:id="@+id/etLoginCnpjcpf" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:inputType="number"/>
+	    </LinearLayout>
+	    
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		    android:orientation="vertical" android:layout_weight="1">
+		    <TextView  android:id="@+id/tvTituloLoginSenha" android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto"
+		        android:text="TELEFONE"/>
+		    <EditText android:id="@+id/etLoginSenha" android:layout_height="wrap_content" android:layout_width="fill_parent" android:maxLines="1" android:inputType="number"/>
+	    </LinearLayout>
+			    	    
+	</LinearLayout>
+
+	<!-- Linha -->
+	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp" />
+		
+	
+	<!-- Botoes -->
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="5dp" >
+		<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4" />
+	    <ImageView android:id="@+id/btLoginVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltarxml" android:layout_weight="1"/>
+	    <ImageView android:id="@+id/btLoginEntrar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/entrarxml" android:layout_weight="1"/>
+	</LinearLayout>
+			
+		<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1" android:paddingTop="20dp" android:gravity="bottom">
+		    <TextView  android:id="@+id/tvLoginObterSenha" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		        style="@style/TituloCaixaTexto" android:textSize="20sp"   android:text="Clique aqui para obter Senha." android:paddingTop="20dp"/>
+	    </LinearLayout>
+</LinearLayout>		
+</LinearLayout>

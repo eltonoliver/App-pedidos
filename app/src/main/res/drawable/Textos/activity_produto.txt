@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="5dp">
+
+	<!-- Titulo -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" 
+        android:background="#FF8C00" android:padding="10dp" android:gravity="center_horizontal">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:textColor="#FFFFFF" android:textSize="20dp" android:textStyle="bold" android:text="LISTA DE PRODUTOS"/>
+   </LinearLayout>
+
+ <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1">
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"> 
+    
+    
+    <!-- Produtos Linha 1 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp" android:gravity="bottom">
+    	<!-- P7 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p7"/>
+    	    <TextView android:id="@+id/tvProdutoP7" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text=""/>
+       </LinearLayout>
+       
+    	<!-- P13 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p13"/>
+    	    <TextView android:id="@+id/tvProdutoP13" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text=""/>
+       </LinearLayout>
+    </LinearLayout>
+
+    <!-- Produtos Linha 2 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp" android:gravity="bottom">
+    	<!-- P20 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p20"/>
+    	    <TextView android:id="@+id/tvProdutoP20" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text=""/>
+       </LinearLayout>
+       
+    	<!-- P45 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p45"/>
+    	    <TextView android:id="@+id/tvProdutoP45" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text=""/>
+       </LinearLayout>
+    </LinearLayout>
+    
+    <!-- Produtos Linha 3 -->
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp" android:gravity="bottom">
+    	<!-- P20 -->
+    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:layout_weight="1">
+    	    <ImageView android:id="@+id/ivProdutoP45" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/p1"/>
+    	    <TextView android:id="@+id/tvProdutoP1" android:layout_height="wrap_content" android:layout_width="wrap_content"
+    	        android:textColor="@android:color/black" android:textStyle="bold" android:text="AGENDAMENTO"/>
+       </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    		    
+</LinearLayout>

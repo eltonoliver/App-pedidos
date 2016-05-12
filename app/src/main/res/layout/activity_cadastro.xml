@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:background="@drawable/fundo" android:orientation="vertical" android:padding="5dp">
+     
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1">
+     
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" 
+	    android:paddingTop="10dp" android:layout_weight="1" >
+	    
+		<!-- CpfCnpj -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="CNPJ/CPF"/>
+		    <EditText android:id="@+id/etCadCnpjcpf" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+		              style="@style/FonteEditText" android:maxLength="14" android:inputType="number" />
+	    </LinearLayout>
+	    
+		<!-- Nome -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Nome/Razão Social"/>
+		    <EditText android:id="@+id/etCadNome" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="30" android:inputType="textCapCharacters" />
+	    </LinearLayout>
+			
+		<!-- Endereco/Numero -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Endereço" />
+		    	<EditText android:id="@+id/etCadEndereco" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="100" android:inputType="textCapCharacters"/>
+	    	</LinearLayout>
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="4">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Numero"/>
+		    	<EditText android:id="@+id/etCadNumero" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="5" android:inputType="textCapCharacters"/>
+	    	</LinearLayout>
+		</LinearLayout>
+		
+		<!-- Bairro/CEP -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Bairro"/>
+<!-- 		    	<EditText android:id="@+id/etCadBairro" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="20"/> -->
+				<Spinner android:id="@+id/spCadBairro" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	    	</LinearLayout>
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="2">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Cep"/>
+		    	<EditText android:id="@+id/etCadCep" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="9" android:inputType="number"/>
+	    	</LinearLayout>
+		</LinearLayout>
+		
+		<!-- Cidade/UF -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Cidade"/>
+<!-- 		    	<EditText android:id="@+id/etCadCidade" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" /> -->
+				<Spinner android:id="@+id/spCadCidade" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	    	</LinearLayout>
+<!-- 			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="5"> -->
+<!-- 		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text=""/> -->
+<!-- 			    <ImageView android:id="@+id/ivPesquisar" android:layout_height="fill_parent" android:layout_width="fill_parent" android:src="@drawable/pesquisar" android:layout_weight="3" android:gravity="left"/> -->
+<!-- 	    	</LinearLayout> -->
+	    	
+<!-- 	    	<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="5"/> -->
+			
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="5">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="UF"/>
+		    	<EditText android:id="@+id/etCadUf" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="2" android:inputType="textCapCharacters" android:focusable="false"/>
+	    	</LinearLayout>
+		</LinearLayout>
+		
+		<!-- Telefone/Data Nascimento -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Telefone"/>
+		    	<EditText android:id="@+id/etCadTelefone" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="14" android:inputType="number"/>
+	    	</LinearLayout>
+			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Dt. Nascimento"/>
+		    	<EditText android:id="@+id/etCadDtNascimento" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="10" android:inputType="number"/>
+	    	</LinearLayout>
+<!-- 			<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1"> -->
+<!-- 		    	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Senha"/> -->
+<!-- 		    	<EditText android:id="@+id/etCadSenha" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="10" android:inputType="textPassword"/> -->
+<!-- 	    	</LinearLayout> -->
+		</LinearLayout>
+						
+		<!-- Senha de Acesso -->
+<!-- 		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1"> -->
+<!-- 		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Senha de Acesso"/> -->
+<!-- 		    <EditText android:id="@+id/etCadSenha" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="10" android:inputType="textPassword"/> -->
+<!--    	    </LinearLayout> -->
+		<!-- Email -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="E-mail"/>
+		    <EditText android:id="@+id/etCadEmail" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="30" 
+		              android:scrollbars="vertical" android:inputType="textEmailAddress" />
+	    </LinearLayout>
+		<!-- Observação -->
+		<LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:layout_weight="1">
+		    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/TituloCaixaTexto" android:text="Ponto de Referência"/>
+		    <EditText android:id="@+id/etCadObs" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/FonteEditText" android:maxLength="30" 
+		              android:inputType="textMultiLine" android:lines="2" android:maxLines="3" android:scrollbars="vertical"/>
+	    </LinearLayout>
+	    
+	<!-- Linha -->
+	<LinearLayout   android:layout_width="fill_parent"  android:layout_height="2dp" android:background="#FF8C00" android:padding="5dp"/>
+			    
+	<!-- Botoes -->
+	<LinearLayout  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:paddingTop="10dp" android:gravity="bottom" android:layout_weight="1" >
+	    <LinearLayout  android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="3" />
+		<ImageView android:id="@+id/btCadVoltar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/voltarxml" android:layout_weight="1" android:layout_gravity="bottom"/>
+	    <ImageView android:id="@+id/btCadSalvar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/salvarxml" android:layout_weight="1" android:layout_gravity="bottom"/>
+	</LinearLayout>				
+	    
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
