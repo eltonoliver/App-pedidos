@@ -44,6 +44,15 @@
 			android:src="@drawable/menu3_app"
 			android:layout_marginLeft="5dp"
 			android:layout_marginRight="5dp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="70dp"
+			android:id="@+id/imageView5"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/menu4_app"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" />
 	</LinearLayout>
 
 </LinearLayout>
