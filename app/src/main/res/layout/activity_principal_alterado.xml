@@ -16,8 +16,7 @@
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center_horizontal"
+		android:layout_height="700dp"
 		android:layout_weight="1.66"
 		android:weightSum="1">
 
@@ -34,6 +33,15 @@
 			android:layout_height="70dp"
 			android:id="@+id/imageView3"
 			android:src="@drawable/menu2_app"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="70dp"
+			android:id="@+id/imageView4"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/menu3_app"
 			android:layout_marginLeft="5dp"
 			android:layout_marginRight="5dp" />
 	</LinearLayout>
